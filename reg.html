@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>REGISTRATION  FORM</h1>
+        <div class="container">
+            
+            <div class="form">
+                
+                <h2 style="color: #db0e0e; font-weight: bold;">Fill up Registration form</h2>
+                <form>
+                   
+                    <div class="f_name">
+                        <label for="f_name">FIRST NAME: </label>
+                        <input type="text" id="f_name" placeholder="Ex: Nishad" required>
+                    </div>
+                    <div class="l_name">
+                        <label for="l_name">LAST NAME: </label>
+                        <input type="text" id="l_name" placeholder="Ex: Barudwale" required>
+                    </div>
+                    <div class="gender">
+                        <label for="gender">GENDER: </label>
+                        <input type="radio" name="male-female" id="male" value="Male">Male
+                        <input type="radio" name="male-female" id="female" value="Female">Female
+                    </div>
+                    <br>
+                    <div class="phn">
+                        <label for="phn">CONTACT NUMBER: </label>
+                        <input type="number" id="phn" placeholder="Ex. 1234567890" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">EMAIL Id: </label>
+                        <input type="email" id="email" placeholder="Ex: Nsb@gmail.com" required>
+                    </div>
+                    
+                    <div class="website">
+                        <label for="website">COURSE: </label>
+                        <input type="url" id="website" placeholder="Ex. c/c++/python/java" required>
+                    </div>
+                    
+                    <div class="skills">
+                        <label for="skills">SKILLS: </label>
+                        
+                        <input type="checkbox" value="PYTHON" id="cpp" class="checkbox" checked>PYTHON
+                        <input type="checkbox" value="JAVA" id="c" class="checkbox">JAVA
+                        <input type="checkbox" value="WEB DEVELOPMENT" id="html" class="checkbox">WEB DEVELOPMENT
+                        <input type="checkbox" value="ANDROID DEVELOPMENT" id="css" class="checkbox">ANDROID DEVELOPMENT
+                        <input type="checkbox" value="MACHINE LEARNING " id="css" class="checkbox">MACHINE LEARNING 
+                    </div>
+                    <div class="button">
+                        <button type="button" id="submit">SUBMIT</button>
+                        <button type="reset" id="reset">RESET</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+<div class="output">
+                <h2 style="color: #030404;">STUDENT DETAILS</h2>
+                <br>
+                <div class="cardContainer" id="cardContainer">
+                </div>
+            </div>
+        </div>
+    <script src="reg.js"></script>
+</body>
+
+</html>
